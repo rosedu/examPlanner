@@ -1,0 +1,21 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+
+  <DatePicker
+    android:id="@+id/datePicker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:spinnersShown="false" />
+
+  <Button
+    android:id="@+id/dateOk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ok"
+    android:onClick="setDate" />
+
+</LinearLayout>

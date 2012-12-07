@@ -1,19 +1,40 @@
-<RelativeLayout
+<LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
 
   <EditText
     android:id="@+id/course"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" />
 
-  <DatePicker
-    android:id="@+id/datePicker"
+  <ListView
+    android:id="@+id/dateList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  </ListView>
+
+  <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
-    android:layout_centerVertical="true" />
+    android:orientation="horizontal">
 
-</RelativeLayout>
+    <Button
+      android:id="@+id/date1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="+Date"
+      android:onClick="selectDate" />
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/doneConstraintEdit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Done"
+    android:onClick="done" />
+
+</LinearLayout>

@@ -25,6 +25,10 @@
       android:name=".ConstraintEditActivity"
       android:label="Constraint Editor">
     </activity>
+    <activity
+      android:name=".ConstraintDateSelection"
+      android:label="Constraint Date Selection">
+    </activity>
   </application>
 
 </manifest>
