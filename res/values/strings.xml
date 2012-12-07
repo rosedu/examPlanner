@@ -4,6 +4,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="login_screen">Login Screen here</string>
+    <string name="login_screen">Please login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
 
 </resources>
