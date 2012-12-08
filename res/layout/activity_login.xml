@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:text="@string/login_screen"
-        android:textSize="30dp"
+        android:textSize="20dp"
         tools:context=".LoginActivity" />
 
     <EditText
@@ -20,32 +20,32 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText1"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPassword" >
-
-        <requestFocus />
-    </EditText>
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText1"
         android:layout_below="@+id/editText2"
-        android:layout_marginTop="54dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="userLogin"
         android:text="@string/login" />
 
 </RelativeLayout>
