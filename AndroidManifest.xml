@@ -24,10 +24,20 @@
     <activity
       android:name=".ConstraintEditActivity"
       android:label="Constraint Editor">
+      <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
     </activity>
     <activity
       android:name=".ConstraintDateSelection"
       android:label="Constraint Date Selection">
+      <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
     </activity>
   </application>
 
