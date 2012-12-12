@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -24,14 +25,15 @@ public class LoginActivity extends Activity {
     public void userLogin(View v) {
     	EditText usernameField = (EditText) findViewById(R.id.editText1);
     	EditText passwordField = (EditText) findViewById(R.id.editText2);
+        CheckBox rememberMe    = (CheckBox) findViewById(R.id.checkBox1);
     	
     	String username = usernameField.getText().toString();
     	String password = passwordField.getText().toString();
     	
-    	SendData(username, password);
+    	SendData(username, password, rememberMe.isChecked());
     }
     
-    public void SendData(String username, String password) {
+    public void SendData(String username, String password, boolean rememberMe) {
     	//TODO: Connect to server and send data
     	
     	Toast.makeText(this, "Username: " + username + "\n" 
