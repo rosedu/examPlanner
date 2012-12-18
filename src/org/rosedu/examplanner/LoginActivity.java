@@ -24,4 +24,9 @@ public class LoginActivity extends Activity {
     Intent intent = new Intent(this, ConstraintEditActivity.class);
     startActivity(intent);
   }
+  
+  public void startDisplaySolution(View v) {
+	    Intent intent = new Intent(this, DisplaySolutionActivity.class);
+	    startActivity(intent);
+	  }
 }
